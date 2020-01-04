@@ -12,7 +12,7 @@ public class Cart {
 
 	public Cart(List<MenuItem> menuItemList, double total) {
 		super();
-		menuItemList = menuItemList;
+		this.menuItemList = menuItemList;
 		this.total = total;
 	}
 
@@ -21,7 +21,7 @@ public class Cart {
 	}
 
 	public void setMenuItemList(List<MenuItem> menuItemList) {
-		menuItemList = menuItemList;
+		this.menuItemList = menuItemList;
 	}
 
 	public double getTotal() {
