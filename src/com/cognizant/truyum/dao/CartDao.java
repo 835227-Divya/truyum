@@ -8,6 +8,5 @@ public interface CartDao {
 	public Cart getAllCartItems(long userId) throws CartEmptyException;
 
 	public void removeCartItem(long userId, long menuItemId);
-	
 
 }

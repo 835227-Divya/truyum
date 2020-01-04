@@ -41,8 +41,8 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 	public List<MenuItem> getMenuItemListCustomer() {
 		ArrayList<MenuItem> menuItems = new ArrayList<MenuItem>();
 		for (MenuItem menuItem : menuItemList) {
-			if (menuItem.getDateOfLaunch().before(new Date())
-					|| menuItem.getDateOfLaunch().equals(new Date()) && menuItem.isActive() == true) {
+			if ((menuItem.getDateOfLaunch().before(new Date()) || menuItem.getDateOfLaunch().equals(new Date()))
+					&& menuItem.isActive() == true) {
 				menuItems.add(menuItem);
 			}
 
