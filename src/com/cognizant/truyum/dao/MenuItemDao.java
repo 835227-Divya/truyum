@@ -5,11 +5,11 @@ import java.util.List;
 import com.cognizant.truyum.model.MenuItem;
 
 public interface MenuItemDao {
-	public List<MenuItem> getMenuItemListAdmin();
+    public List<MenuItem> getMenuItemListAdmin();
 
-	public List<MenuItem> getMenuItemListCustomer();
+    public List<MenuItem> getMenuItemListCustomer();
 
-	public void modifyMenuItem(MenuItem menuitem);
+    public void modifyMenuItem(MenuItem menuitem);
 
-	public MenuItem getMenuItem(long menuItemId);
+    public MenuItem getMenuItem(long menuItemId);
 }
