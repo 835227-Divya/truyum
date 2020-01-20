@@ -17,14 +17,14 @@
         <h2 id="item-cart">Item Removed into Cart Successfully</h2>
     </c:if>
     <c:set var="cart" value="${cart}"></c:set>
-    <table id="table">
-        <col width="300px" />
-        <col width="200px" />
-        <col width="90px" />
+    <table id="table" border=0px>
+       
+
+
         <tr>
-            <th align="left">Name</th>
-            <th align="left">Free Delivery</th>
-            <th align="right">Price</th>
+            <th align="left" width=8%>Name</th>
+            <th align="left" width=5%>Free Delivery</th>
+            <th align="right" width=5%>Price</th>
         </tr>
         <c:forEach items="${menuItem}" var="menuItem">
             <tr>
@@ -35,13 +35,15 @@
                     </c:choose></td>
                 <td align="right"><f:formatNumber type="currency" currencySymbol="Rs."
                         minFractionDigits="2" value="${menuItem.getPrice()}"></f:formatNumber></td>
-                <td align="center"><a href="RemoveCart?menuItemId=${menuItem.getId()}">Delete</a></td>
+                <td width=9% align="center"><a href="RemoveCart?menuItemId=${menuItem.getId()}">Delete</a></td>
             </tr>
         </c:forEach>
         <tr>
             <td></td>
             <td><b>Total</b></td>
-            <td><b>Rs.${cart.getTotal()}</b></td>
+
+            <td align="right"><b>Rs.${cart.getTotal()}</b></td>
+        </tr>
     </table>
     <footer>Copyright &copy; 2019 </footer>
 </body>

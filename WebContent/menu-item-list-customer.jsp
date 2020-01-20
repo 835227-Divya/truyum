@@ -15,15 +15,15 @@
     <h1>Menu Items</h1>
     <br />
     <c:if test="${addCartStatus==true}">
-        <h2 id="item-cart">Items Added into Cart Successfully</h2>
+        <h2 id="item-cart">Item Added into Cart Successfully</h2>
     </c:if>
     <table id="customer-table">
         <col width="300px" />
-        <col width="160px" />
-        <col width="180px" />
-        <col width="170px" />
         <col width="200px" />
-        <col width="100px" />
+        <col width="150px" />
+        <col width="350px" />
+        <col width="150px" />
+        <col width="150px" />
         <tr>
             <th align="left">Name</th>
             <th align="center">Free Delivery</th>
